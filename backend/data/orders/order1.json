@@ -1,0 +1,12 @@
+{
+    "customerName": "Tóth András",
+    "zipCode": "23213",
+    "city": "Budapest",
+    "street": "Kisfaludy utca",
+    "houseNumber": "13",
+    "phone": "2131",
+    "e-mail": "h@k",
+    "status": "open",
+    "orderedPizzas": "[{\"pizzaName\":\"Chili Joe pizza\",\"amount\":\"2\"}]",
+    "date": "2022-4-13"
+  }

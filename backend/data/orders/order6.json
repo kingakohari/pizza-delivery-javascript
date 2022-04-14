@@ -1,0 +1,12 @@
+{
+    "customerName": "James",
+    "zipCode": "1234",
+    "city": "Kutyapest",
+    "street": "Utca",
+    "houseNumber": "12",
+    "phone": "12345676",
+    "e-mail": "nincs@van.hu",
+    "status": "open",
+    "orderedPizzas": "[{\"pizzaName\":\"Basic pizza\",\"amount\":\"1\"}]",
+    "date": "2022-4-14"
+  }

@@ -1,0 +1,12 @@
+{
+    "customerName": "Bélabá",
+    "zipCode": "6547",
+    "city": "Bélapátfalva",
+    "street": "Köztársaság u. ",
+    "houseNumber": "34",
+    "phone": "78645",
+    "e-mail": "bela@bela",
+    "status": "open",
+    "orderedPizzas": "[{\"pizzaName\":\"Tonhalas pizza \",\"amount\":\"10\"},{\"pizzaName\":\"Tenger gyümölcsei\",\"amount\":\"5\"},{\"pizzaName\":\"Basic pizza\",\"amount\":\"13\"}]",
+    "date": "2022-4-13"
+  }

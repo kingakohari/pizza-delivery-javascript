@@ -1,0 +1,103 @@
+[
+    {
+        "name": "Basic pizza",
+        "ingredients": [
+            "paradicsomos alap",
+            "prosciutto sonka",
+            "sajt"
+        ],
+        "image": "/images/pizza1.png",
+        "isAvailable": true
+    },
+    {
+        "name": "Toásos pizza",
+        "ingredients": [
+            "paradicsomos alap",
+            "prosciutto sonka",
+            "gomba",
+            "sajt",
+            "toás"
+        ],
+        "image": "/images/pizza2.png",
+        "isAvailable": true
+    },
+    {
+        "name": "Tömlős saa(j)t pizza",
+        "ingredients": [
+            "paradicsomos alap",
+            "prosciutto sonka",
+            "gomba",
+            "tömlős sajt"
+        ],
+        "image": "/images/pizza3.png",
+        "isAvailable": true
+    },
+    {
+        "name": "Chili Joe pizza",
+        "ingredients": [
+            "paradicsomos alap",
+            "prosciutto sonka",
+            "habanero paprika",
+            "sajt",
+            "lilahagyma"
+        ],
+        "image": "/images/pizza4.png",
+        "isAvailable": true
+    },
+    {
+        "name": "Tonhalas pizza ",
+        "ingredients": [
+            "paradicsomos alap",
+            "prosciutto sonka",
+            "gomba",
+            "tonhal",
+            "sajt"
+        ],
+        "image": "/images/pizza5.png",
+        "isAvailable": true
+    },
+    {
+        "name": "Mexikói pizza",
+        "ingredients": [
+            "paradicsomos alap",
+            "prosciutto sonka",
+            "paprika",
+            "sajt",
+            "bab",
+            "jalapeno"
+        ],
+        "image": "/images/pizza6.png",
+        "isAvailable": false
+    },
+    {
+        "name": "Tenger gyümölcsei",
+        "ingredients": [
+            "paradicsomos alap",
+            "prosciutto sonka",
+            "gomba",
+            "sajt",
+            "garnéla rák",
+            "olívabogyó"
+        ],
+        "image": "/images/pizza7.png",
+        "isAvailable": false
+    },
+    {
+        "name": "uzguzguzg",
+        "ingredients": [
+            "drtfdthfdt"
+        ],
+        "image": "/images/pizza8.png",
+        "isAvailable": true
+    },
+    {
+        "name": "9-es pizza",
+        "ingredients": [
+            "üveg",
+            "műanyag",
+            "vas"
+        ],
+        "image": "/images/pizza9.png",
+        "isAvailable": true
+    }
+]

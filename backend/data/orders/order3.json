@@ -1,0 +1,12 @@
+{
+    "customerName": "Kis János",
+    "zipCode": "9400",
+    "city": "Sopron",
+    "street": "Ógabona tér",
+    "houseNumber": "1",
+    "phone": "00362823012172",
+    "e-mail": "mall@goal.com",
+    "status": "open",
+    "orderedPizzas": "[{\"pizzaName\":\"Basic pizza\",\"amount\":\"1\"}]",
+    "date": "2022-4-13"
+  }

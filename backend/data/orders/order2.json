@@ -1,0 +1,12 @@
+{
+    "customerName": "Pizzás Aranka",
+    "zipCode": "2222",
+    "city": "Záhony",
+    "street": "Kossuth L. u.",
+    "houseNumber": "2",
+    "phone": "26545645",
+    "e-mail": "ket@pizza",
+    "status": "open",
+    "orderedPizzas": "[{\"pizzaName\":\"Basic pizza\",\"amount\":\"2\"},{\"pizzaName\":\"Tenger gyümölcsei\",\"amount\":\"2\"}]",
+    "date": "2022-4-13"
+  }

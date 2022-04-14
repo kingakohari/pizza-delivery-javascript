@@ -1,0 +1,12 @@
+{
+    "customerName": "Nagyné Irénke",
+    "zipCode": "2457",
+    "city": "Pornóapáti",
+    "street": "Rákóczi út",
+    "houseNumber": "88",
+    "phone": "43567898",
+    "e-mail": "iren@ke",
+    "status": "open",
+    "orderedPizzas": "[{\"pizzaName\":\"Chili Joe pizza\",\"amount\":\"1\"},{\"pizzaName\":\"Mexikói pizza\",\"amount\":\"1\"},{\"pizzaName\":\"sztetem pizza\",\"amount\":\"2\"}]",
+    "date": "2022-4-13"
+  }

@@ -1,0 +1,483 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    background: transparent;
+    font-family: inherit;
+  }
+  a {
+    text-decoration: none;
+  }
+  a img {
+    border: none;
+  }
+  
+  button,
+  a {
+    cursor: pointer;
+    color: inherit;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  button,
+  textarea,
+  select {
+    appearance: none !important;
+    border-radius: 0;
+  }
+  
+  /* -------------------- CSS reset vége -------------------- */
+  
+  #root.noclick {
+    pointer-events: none;
+  }
+  
+  h1 {
+    margin: 0;
+    font-weight: 200;
+  }
+  
+  input {
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  
+  body {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    justify-content: stretch;
+    align-items: center;
+    text-align: center;
+    overflow-x: hidden; /* Horizontal scrollbar eltüntetése minden esetben (pl. animáció) */
+  }
+  
+  #root {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    font-family: "Nunito", sans-serif;
+    color: black;
+  }
+  
+  /* Background image */
+  
+  #root::before {
+    content: "";
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url("https://isaacg94.github.io/pizza-place-website/images/pzza1.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    z-index: -100;
+  }
+  
+  input {
+    background-color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  #menu,
+  #cart {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 20px;
+  }
+  
+  /* -------------------- Menü (Pizzák) [bal oldali hasáb] -------------------- */
+  
+  #menu {
+    width: 45%;
+    min-width: 500px;
+    min-height: max-content;
+    background-color: rgba(248, 234, 226, 0.8);
+    overflow: auto;
+  }
+  
+  #menu h1 {
+    padding-top: 15px;
+    font-family: "Love Ya Like A Sister", cursive;
+    font-size: 25px;
+  }
+  
+  #menu p {
+    padding-bottom: 5px;
+  }
+  
+  /* Pizza pictures */
+  #menu .pizzaElement {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  #menu .pizzaElement img {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+  }
+  
+  /* Add to order button: */
+  
+  button {
+    height: 25px;
+    width: 100px;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: #ffa001;
+    color: #fff;
+  }
+  
+  button:hover {
+    color: aliceblue;
+  }
+  
+  /* Menü beúszás */
+  #menu.showing {
+    animation: slide-out-anim 1s ease-in-out forwards;
+  }
+  
+  @keyframes slide-out-anim {
+    0% {
+      transform: translateX(30%);
+    }
+  
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  
+  /* -------------------- Cart - kosár [jobb oldali hasáb] -------------------- */
+  
+  #cart {
+    display: none;
+    width: 30%;
+    min-width: 500px;
+    min-height: 80vh;
+    animation: slide-in-anim 1s ease-in-out forwards;
+    background-color: rgba(248, 234, 226, 0.9);
+    font-size: 20px;
+  }
+  
+  /* Cart beúszás keyframe-ek*/
+  @keyframes slide-in-anim {
+    0% {
+      transform: translateX(60%);
+      opacity: 0;
+    }
+  
+    100% {
+      /* opacity: 1; */
+      transform: translateX(0%);
+    }
+  }
+  
+  #cart h1 {
+    padding-bottom: 15px;
+    font-size: 30px;
+    font-family: "Love Ya Like A Sister", cursive;
+  }
+  
+  #cart p {
+    font-size: 25px;
+    padding-bottom: 15px;
+  }
+  
+  #cart.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+  }
+  
+  #addedPizzas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Love Ya Like A Sister", cursive;
+  }
+  
+  #form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+  }
+  
+  #form input {
+    padding: 5px;
+    margin: 5px;
+  }
+  
+  #form input[type="number"]::-webkit-outer-spin-button,
+  #form input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  
+  /* Form submit gomb */
+  
+  #order {
+    margin: 15px;
+    width: 140px;
+    height: 40px;
+    font-size: 16px;
+  }
+  
+  /* Troll gomb */
+  
+  #coupon {
+    height: 25px;
+    width: 140px;
+    padding: 3px;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: #556574;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  /* -------------------- Media Query -------------------- */
+  
+  @media screen and (max-width: 1080px) {
+    #root {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    #menu.showing {
+      width: 100%;
+      min-width: unset;
+      animation: none;
+    }
+  
+    #cart {
+      width: 100%;
+      min-width: unset;
+      animation: none;
+    }
+  }
+  
+  /******************************** ADMIN MODE ***********************************/
+  
+  button#adminMode {
+    position: fixed;
+    top: 5%;
+    left: 0;
+  
+    width: 170px;
+    height: 80px;
+    
+    background-color: #ffa001;
+    border-radius: unset;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+  
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+  }
+  
+  button#adminMode.on {
+    background-color: rgb(0, 128, 0);   
+  }
+  
+  button#orderView {
+    position: fixed;
+    top: 15%; 
+    left: 0;
+  
+    width: 170px;
+    height: 80px;
+  
+    background-color: #ffa001;
+    border-radius: unset;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+  
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+  }
+  
+  form#adminModeContainer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    height: max-content;
+  }
+  
+  div.adminModePizzaCard,
+  div.newPizza {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  
+    width: 300px;
+    height: 420px;
+  
+    display: flex;
+    flex-direction: column;
+  
+    padding: 10px;
+  
+    background-color: #fff;
+  
+    border-radius: 5px;
+    
+    box-shadow: rgba(214, 214, 214, 1) -5px -5px 29px 8px inset;
+  }
+  
+  .adminLabelName {
+    font-weight: 700;
+  }
+  
+  .adminModeName {
+    color: #000;
+    background-color: #ffa001;
+    box-shadow: rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    margin-bottom: 5px;
+  
+    font-family: "Love Ya Like A Sister", cursive;
+    font-size: 20px;
+  }
+  
+  .adminAvailable {
+    margin-right: 5px;
+    font-weight: 700;
+  }
+  
+  button#adminModeSaveButton {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  
+    bottom: -80px; 
+    left: 50%;
+    width: 130px;
+    height: 40px;
+  
+    transform: translateX(-50%);
+    
+    text-align: center;
+    font-size: 22px;
+  
+  }
+  
+  div.adminModePizzaCard button.removePizza {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+  
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  
+  div.adminModePizzaCard textarea,
+  div.newPizza textarea {
+    width: 250px;
+    height: 100px;
+  
+    border: 2px solid rgba(0, 0, 0, 0.2);
+  
+    padding: 5px;
+  
+    font-size: 15px;
+  }
+  
+  div.adminModePizzaCard img,
+  div.newPizza img {
+    width: 120px;
+    height: 120px;
+  }
+  
+  div.adminModePizzaCard button.adminModeBigPlus,
+  div.newPizza button.adminModeBigPlus {
+    width: 120px;
+    height: 120px;
+  
+    border-radius: 50%;
+  
+    font-size: 120px;
+    line-height: 0;
+  }
+  
+  div.newPizza p {
+    font-weight: 700;
+  }
+  
+  #removePizza {
+    height: 30px;
+    width: 30px;
+    margin: 3px;
+  }
+  
+  #removePizza p {
+    font-size: 20px;
+  }
+  
+  input[type=file]::file-selector-button {
+    
+    font-family: "Nunito", sans-serif;
+  
+  }
+  
+  input[type=file]::file-selector-button:hover {
+    background-color: #ffa001;
+    
+  }
+  
+  div.saveResponse {
+    display: none;
+    position: absolute;
+    top: -400px;
+    left: 50%;
+  
+    width: 400px;
+    height: 80px;
+  
+    background-color: rgba(255, 255, 255);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+    
+    line-height: 80px;
+    font-size: 20px;
+  
+    transform: translateX(-50%);
+    animation: saveResponseFloat 3s linear;
+  }
+  
+  div.saveResponse.show {
+    display: block;
+  }
+  
+  @keyframes saveResponseFloat {
+    0% { top: -400px }
+    15% { top: 50px }
+    85% { top: 50px }
+    100% { top: -400px }
+  }
+  
+  

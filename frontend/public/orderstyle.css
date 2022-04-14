@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    background: transparent;
+    font-family: inherit;
+  }
+  a {
+    text-decoration: none;
+  }
+  a img {
+    border: none;
+  }
+  
+  button,
+  a {
+    cursor: pointer;
+    color: inherit;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  button,
+  textarea,
+  select {
+    appearance: none !important;
+    border-radius: 0;
+  }
+  
+  /* -------------------- CSS reset vége -------------------- */
+
+  #root2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    font-family: "Nunito", sans-serif;
+    color: black;   
+    background-image: url("https://isaacg94.github.io/pizza-place-website/images/pzza1.jpg"); 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    z-index: -100;
+    background-attachment: fixed;
+  }
+
+  
+  #order {
+    width: 300px;
+    height: 500px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 5px;
+    margin-top: 5px;
+    border-radius: 20px;
+    box-shadow: rgba(214, 214, 214, 1) -5px -5px 29px 8px inset;  
+  }
+
+  #order h1, h2 {
+    font-size: 1.3em;
+  }
+
+  .orderStatus {
+    background-color: rgb(255, 8, 0);
+    width: 80px;
+    height: 20px;
+    border-radius: 3px;
+    color: #fff;
+  }
+
+  .turnGreen {
+    background-color: rgb(52, 235, 15);
+    color: #000;
+  }
